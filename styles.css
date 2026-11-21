@@ -604,3 +604,25 @@ header [aria-current="page"] {
         grid-template-columns: 1fr;
     }
 }
+
+#itineraries .card {
+    padding-top: 0;
+    padding-inline: 0;
+}
+
+#itineraries .card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+#itineraries .card .tag {
+    top: 0.5rem;
+    padding: 0 0.5rem;
+    background: var(--color-white);
+}
+
+#itineraries .card p {
+    margin: 0.5rem 1rem 1.25rem;
+}
