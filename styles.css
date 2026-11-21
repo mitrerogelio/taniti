@@ -327,6 +327,63 @@ header [aria-current="page"] {
     font-size: 0.85rem;
 }
 
+/* Featured */
+.featured {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+    gap: 3rem;
+    background: var(--color-mint);
+    text-align: center;
+}
+
+.featured img {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+}
+
+.featured h2 {
+    color: var(--color-teal);
+    font-family: var(--font-sans);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.featured p {
+    margin-bottom: 2rem;
+    font-family: var(--font-sans);
+    font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+    .featured {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .featured img {
+        aspect-ratio: 4 / 3;
+    }
+
+    .featured h2 {
+        font-size: 2.25rem;
+    }
+}
+
+/* Option list */
+.option-list {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.option-list .button {
+    display: block;
+    padding: 0.75rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
 /* ==== Per page styles ==== */
 
 /* Home */
@@ -403,6 +460,25 @@ header [aria-current="page"] {
 
 @media (max-width: 768px) {
     .things h2 {
+        font-size: 2.25rem;
+    }
+}
+
+/* Stay */
+#lodging h2 {
+    font-size: 3rem;
+}
+
+#featured-lodging h3 {
+    margin-top: 0.5rem;
+}
+
+#featured-lodging p {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    #lodging h2 {
         font-size: 2.25rem;
     }
 }
