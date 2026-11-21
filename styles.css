@@ -565,3 +565,42 @@ header [aria-current="page"] {
     font-size: 1.2rem;
     font-weight: 700;
 }
+
+/* Plan your trip */
+#steps > h2,
+#itineraries > h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.step-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    counter-reset: step;
+}
+
+.step-list .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    counter-increment: step;
+}
+
+.step-list .card::before {
+    content: counter(step);
+    padding: 0.25rem 0.9rem;
+    border: 1px solid var(--color-ink);
+    font-size: 1.5rem;
+}
+
+.step-list .card p {
+    flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+    .step-list {
+        grid-template-columns: 1fr;
+    }
+}
