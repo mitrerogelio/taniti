@@ -483,17 +483,21 @@ header [aria-current="page"] {
 }
 
 /* Things to do */
-.things h2 {
+#food h2,
+#rainforest-volcano h2,
+#beaches h2 {
     font-size: 3rem;
 }
 
-.things .feature-card {
+.feature-card {
     max-width: 26rem;
     justify-self: center;
 }
 
 @media (max-width: 768px) {
-    .things h2 {
+    #food h2,
+    #rainforest-volcano h2,
+    #beaches h2 {
         font-size: 2.25rem;
     }
 }
