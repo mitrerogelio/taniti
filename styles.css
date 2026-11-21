@@ -200,6 +200,47 @@ header [aria-current="page"] {
     }
 }
 
+/* Band */
+.band {
+    background: linear-gradient(to right, var(--color-band-start), var(--color-band-end));
+}
+
+.band > h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Cards */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.card {
+    position: relative;
+    padding: 1.5rem 1rem;
+    border: 1px solid var(--color-ink);
+    font-family: var(--font-display);
+    text-align: center;
+}
+
+.card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.card-icon {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+@media (max-width: 768px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* ==== Per page styles ==== */
 
 /* Home */
@@ -240,4 +281,26 @@ header [aria-current="page"] {
 
 #welcome ul a:hover img {
     opacity: 0.85;
+}
+
+#categories {
+    padding-block: 8rem;
+}
+
+#categories h3 a {
+    text-decoration: none;
+}
+
+#categories h3 a:hover {
+    text-decoration: underline;
+}
+
+#categories p {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    #categories {
+        padding-block: 3rem;
+    }
 }
