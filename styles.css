@@ -166,3 +166,30 @@ header [aria-current="page"] {
         gap: 0.5rem 1.25rem;
     }
 }
+
+/* ==== Per page styles ==== */
+
+/* Home */
+#hero {
+    display: grid;
+    place-items: center;
+    min-height: 70vh;
+    background: url("assets/hero.jpg") center / cover;
+    text-align: center;
+}
+
+#hero h1 {
+    padding: 0.5rem 1.5rem;
+    background: rgb(255 255 255 / 0.55);
+    font-size: 4.5rem;
+}
+
+@media (max-width: 768px) {
+    #hero {
+        min-height: 50vh;
+    }
+
+    #hero h1 {
+        font-size: 2.75rem;
+    }
+}
