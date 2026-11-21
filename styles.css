@@ -106,3 +106,63 @@ main > section {
 .button:focus-visible {
     background: var(--color-white);
 }
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem 2rem;
+    padding: 0.75rem 1.5rem;
+    border-bottom: 1px solid var(--color-ink);
+    font-family: var(--font-display);
+}
+
+#logo {
+    font-size: 2rem;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+header ul {
+    display: flex;
+    gap: 2rem;
+}
+
+header ul a {
+    text-decoration: none;
+}
+
+header ul a:hover,
+header [aria-current="page"] {
+    text-decoration: underline;
+}
+
+#nav-cta {
+    padding: 0.4rem 1rem;
+    background: var(--color-nav-button);
+    color: var(--color-white);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    #logo {
+        font-size: 1.6rem;
+    }
+
+    header nav {
+        order: 3;
+        width: 100%;
+    }
+
+    header ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem 1.25rem;
+    }
+}
