@@ -545,3 +545,23 @@ header [aria-current="page"] {
         text-align: left;
     }
 }
+
+/* FAQ */
+#questions {
+    align-items: start;
+}
+
+#questions .collage {
+    margin-top: 2rem;
+}
+
+#questions dl {
+    display: grid;
+    gap: 1.25rem;
+}
+
+#questions dt {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
