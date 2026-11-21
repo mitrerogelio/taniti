@@ -241,6 +241,51 @@ header [aria-current="page"] {
     }
 }
 
+/* Itinerary call to action */
+.itinerary-cta {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+    gap: 3rem;
+    background: var(--color-teal);
+    color: var(--color-white);
+    font-family: var(--font-sans);
+    text-align: center;
+}
+
+.itinerary-cta img {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+}
+
+.itinerary-cta h2 {
+    margin-bottom: 1.5rem;
+    font-family: var(--font-sans);
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.itinerary-cta p {
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+    .itinerary-cta {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .itinerary-cta img {
+        aspect-ratio: 4 / 3;
+    }
+
+    .itinerary-cta h2 {
+        font-size: 2.25rem;
+    }
+}
+
 /* ==== Per page styles ==== */
 
 /* Home */
